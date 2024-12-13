@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="Turtle_48.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="uni">
+        <h1>Aprendendo e testando JavaScript</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo aperiam expedita provident recusandae quasi, laudantium sint velit nihil, amet rem aliquid animi repellat ab optio? Ratione debitis saepe recusandae?
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam porro quod quas fuga culpa, atque aperiam explicabo quidem sint, aliquam repellat at, maiores hic corporis laborum. Ducimus rem quam repellat.
+        </p>
+
+        <label for="pais">De qual país você é ?</label><br>
+        <select id="pais" name="pais" required>
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="portugal">Portugal</option>
+            <option value="espanha">Espanha</option>
+            <option value="franca">França</option>
+        </select><br>
+        <input type="submit" value="Enviar" onclick="vereficar()">
+        <div id="identidade"></div>
+        
+        <script>
+            function vereficar() {
+                const nacionalidade = document.getElementById('pais').value
+                var resp = document.getElementById('identidade')
+                resp.innerHTML = ''
+                if (nacionalidade === 'brasil') {
+                    resp.innerHTML += `<p>Você é <strong>brasileiro</strong>, não pode passar.</p>`
+                }else {
+                    resp.innerHTML = `<p>Você não é <strong>brasileiro</strong>, pode passar.</p>`
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

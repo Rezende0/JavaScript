@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="shortcut icon" href="Turtle_48.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <label for="anoNasc">Ano de Nascimento:</label>
+                <input type="number" name="anoNasc" id="anoNasc" value="2000" required><br>
+            
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="masculino" value="masculino" checked required>
+                <label for="masculino">Masculino</label>
+            
+                <input type="radio" name="sexo" id="feminino" value="feminino" required>
+                <label for="feminino">Feminino</label><br>
+            
+                <input type="submit" value="Verificar" onclick="verificarIdade()">
+            </div>
+
+            <div id="result"></div>
+        </section>       
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
