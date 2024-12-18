@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="shortcut icon" href="Turtle_48.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <label for="idini">Início:</label>
+                <input type="number" name="ini" id="idini" value="0"><br>
+
+                <label for="idfim">Fim:</label>
+                <input type="number" name="fim" id="idfim" value="0"><br>
+
+                <label for="idpasso">Passo:</label>
+                <input type="number" name="passinho" id="idpasso" value="0"><br>
+
+                <input type="submit" value="Enviar" onclick="iniciarContagem()">
+            </div>
+
+            <div id="result">Preparando contagem...</div>
+        </section>       
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
