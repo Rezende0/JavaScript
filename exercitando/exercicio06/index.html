@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="shortcut icon" href="Turtle_48.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <label for="idini">Número (de 0 à 100):</label>
+                <input type="number" name="numBase" id="idnumBase" required>
+
+                <input type="submit" value="Adicionar" onclick="lista()">                
+            </div>
+            <div>
+                <select name="tabuada" id="idtabuada" size="10">             
+                </select>
+            </div>
+
+            <input type="submit" value="Finalizar" style="margin-left: 5px;" onclick="resultado()">
+
+            <div id="result"></div>
+        </section>       
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

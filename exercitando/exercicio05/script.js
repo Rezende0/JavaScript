@@ -13,6 +13,7 @@ function tabuada() {
             let valores = document.createElement('option');       
             valores.text = `${n} x ${c} = ${n*c}`
             valores.value = `tabuada${c}`
+            //usado para dar uso nessa opção.
             tabuada.appendChild(valores)
             c++
         }
